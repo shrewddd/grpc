@@ -38,3 +38,10 @@ def sys_path_to_site_dir_hack():
             items.append(item)
     for item in items:
         site.addsitedir(item)
+
+    import pkgutil
+    try:
+        import google
+        google.__path__ = pkgutil.extend_path(google.__path__, google.__name__)
+    except ImportError:
+        pass
