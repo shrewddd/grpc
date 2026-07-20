@@ -20,6 +20,8 @@ py_library(
         "//examples/python/errors:__subpackages__",
         "//src/python/grpcio_tests/tests/interop:__subpackages__",
         "//src/python/grpcio_tests/tests/status:__subpackages__",
+        "//src/python/grpcio_tests/tests_aio/interop:__subpackages__",
+        "//src/python/grpcio_tests/tests_py3_only/interop:__subpackages__",
         "//py_xds_protos:__subpackages__",
     ],
 )
