@@ -40,6 +40,7 @@ py_library(
     imports = ["."],
     deps = [
         "//src/python/grpcio/grpc:grpcio",
+        "//src/python/grpcio_tests/tests:bazel_namespace_package_hack",
         "@com_google_protobuf//:protobuf_python",
     ],
 )
